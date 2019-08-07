@@ -11,6 +11,7 @@ import org.springframework.jms.config.DefaultJmsListenerContainerFactory;
 import org.springframework.jms.config.JmsListenerContainerFactory;
 
 @SpringBootApplication
+@EnableJms
 public class ActiveMqConsumerApplication {
 
 	@Bean
