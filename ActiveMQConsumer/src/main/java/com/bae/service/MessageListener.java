@@ -12,16 +12,11 @@ public class MessageListener {
 	
 	private MessageRepository repository;
 
-	
 	@Autowired
 	public MessageListener(MessageRepository repository) {
 		this.repository = repository;
 	}
 	
-	
-//	public Message receiveMessage(Message message) {
-//		return repository.save(message);
-//	}
 	
 	 @JmsListener(destination = "AccountQueue", containerFactory = "jmsFactory")
 	 public void receiveMessage(ConsumedMessage message){
