@@ -26,8 +26,10 @@ public class MessageListener {
 	 @JmsListener(destination = "AccountQueue", containerFactory = "jmsFactory")
 	 public void receiveMessage(ConsumedMessage message){
 		 System.out.println("Received <" + message + ">");
-		 message.setId(1L);
+		 
 		 repository.save(message);
+		 
+		 System.out.println(message + " processed ...");
 
 	 }
 
