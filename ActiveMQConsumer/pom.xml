@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.bae</groupId>
-	<artifactId>ActiveMQProducer</artifactId>
+	<artifactId>ActiveMQConsumer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ActiveMQProducer</name>
+	<name>ActiveMQConsumer</name>
 	<description>Component Example project for Spring Boot</description>
 
 	<properties>
@@ -42,11 +42,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
-			<scope>runtime</scope>
 		</dependency>
 	</dependencies>
 
